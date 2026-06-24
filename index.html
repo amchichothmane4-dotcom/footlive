@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FootMatch Live</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+}
+
+header{
+    background:#0f172a;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+nav{
+    background:#1e293b;
+    padding:15px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+}
+
+.hero{
+    background:linear-gradient(135deg,#16a34a,#15803d);
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+}
+
+.hero h1{
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:20px;
+}
+
+.match-card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    margin-bottom:15px;
+    box-shadow:0 2px 8px rgba(0,0,0,.1);
+}
+
+.teams{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    font-size:22px;
+    font-weight:bold;
+}
+
+.score{
+    color:#16a34a;
+    font-size:28px;
+}
+
+footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>⚽ FootMatch Live</h1>
+</header>
+
+<nav>
+    <a href="#">Accueil</a>
+    <a href="#">Matchs</a>
+    <a href="#">Classement</a>
+    <a href="#">Actualités</a>
+    <a href="#">Contact</a>
+</nav>
+
+<section class="hero">
+    <h1>Suivez les matchs en direct</h1>
+    <p>Résultats, calendrier et actualités football</p>
+</section>
+
+<div class="container">
+
+    <h2>Matchs du jour</h2>
+
+    <div class="match-card">
+        <div class="teams">
+            <span>Real Madrid</span>
+            <span class="score">2 - 1</span>
+            <span>Barcelona</span>
+        </div>
+    </div>
+
+    <div class="match-card">
+        <div class="teams">
+            <span>PSG</span>
+            <span class="score">1 - 1</span>
+            <span>Marseille</span>
+        </div>
+    </div>
+
+    <div class="match-card">
+        <div class="teams">
+            <span>Manchester City</span>
+            <span class="score">3 - 0</span>
+            <span>Chelsea</span>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    © 2026 FootMatch Live - Tous droits réservés
+</footer>
+
+</body>
+</html>

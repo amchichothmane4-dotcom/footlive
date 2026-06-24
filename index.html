@@ -44,3 +44,50 @@ th{
 background:#16a34a;
 color:white;
 }
+<h2>⚽ المباريات المباشرة</h2>
+
+<div id="matches">
+جاري تحميل المباريات...
+</div>
+
+<script>
+
+fetch("https://v3.football.api-sports.io/fixtures?live=all", {
+method: "GET",
+headers: {
+"x-apisports-key": "ضع_API_KEY_هنا"
+}
+})
+
+.then(response => response.json())
+
+.then(data => {
+
+let box = document.getElementById("matches");
+
+box.innerHTML = "";
+
+data.response.forEach(match => {
+
+box.innerHTML += `
+<div class="match">
+
+<h3>
+${match.teams.home.name}
+ 🆚 
+${match.teams.away.name}
+</h3>
+
+<p>
+النتيجة:
+${match.goals.home} - ${match.goals.away}
+</p>
+
+</div>
+`;
+
+});
+
+});
+
+</script>

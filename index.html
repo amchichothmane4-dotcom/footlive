@@ -91,3 +91,19 @@ ${match.goals.home} - ${match.goals.away}
 });
 
 </script>
+<div id="clock"></div>
+
+<script>
+function updateClock() {
+    const now = new Date();
+    const date = now.toLocaleDateString('ar-MA');
+    const time = now.toLocaleTimeString('ar-MA');
+    document.getElementById("clock").innerHTML =
+        "📅 " + date + "<br>⏰ " + time;
+}
+setInterval(updateClock, 1000);
+updateClock();
+</script>
+
+</body>
+</html>
